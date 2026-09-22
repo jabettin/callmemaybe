@@ -1,1 +1,1 @@
-`this project is part of the 42 curriculum`
+`This project is part of the 42 curriculum`
