@@ -1,0 +1,17 @@
+[project]
+name = "callmemaybe"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "llm-sdk",
+    "numpy>=2.2.6",
+    "pydantic>=2.13.5",
+]
+
+[tool.uv.workspace]
+members = [
+    "llm_sdk",
+]
+
+[tool.uv.sources]
+llm-sdk = { workspace = true, editable = true }
