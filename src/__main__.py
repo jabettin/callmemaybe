@@ -20,7 +20,7 @@ def main() -> None:
         default=Path("data/output/function_calling_results.json"),
     )
     args = parser.parse_args()
-    print(args)  # placeholder — replace once the pipeline exists
+    print(args) #replace once the pipeline exists
 
 
 if __name__ == "__main__":
