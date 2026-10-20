@@ -6,6 +6,7 @@ from pydantic import BaseModel, ValidationError
 class PromptSpec(BaseModel):
     prompt: str
 
+
 def prompt_loader(path: Path) -> list[PromptSpec]:
     try:
         raw_text = path.read_text()
