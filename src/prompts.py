@@ -20,4 +20,4 @@ def prompt_loader(path: Path) -> list[PromptSpec]:
     try:
         return [PromptSpec.model_validate(item) for item in raw_data]
     except ValidationError as exc:
-        raise RuntimeError(f"Function definitions in {path} do not match expected prompt: {exc}") from exc
+        raise RuntimeError(f"Prompts in {path} do not match expected schema: {exc}") from exc
