@@ -3,6 +3,7 @@ from pathlib import Path
 
 from pydantic import BaseModel, ValidationError
 
+
 class PromptSpec(BaseModel):
     prompt: str
 
